@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Login -->
+    <string name="logo" translatable="false">Logo</string>
+    <string name="game_name" translatable="false">Game Name</string>
+    <string name="wallpaper" translatable="false">Wallpaper</string>
+
+    <!-- Gallery -->
+    <string name="back" translatable="false">Back</string>
+
+    <!-- CardView -->
+    <string name="heritage" translatable="false">Heritage</string>
+
+    <!-- Gallery Heritage -->
+    <string name="title" translatable="false">Title</string>
+    <string name="description" translatable="false">Description</string>
+    <string name="descImg" translatable="false">Image Heritage</string>
+
+    <!-- Button Closer -->
+    <string name="closer" translatable="false">Closer Popup</string>
+
+    <!-- Button Goals -->
+    <string name="BtnGoals" translatable="false">Button Goals</string>
+
+    <!-- Button Rank -->
+    <string name="BtnRank" translatable="false">Button Rank</string>
+
+    <!-- Avatar-->
+    <string name="Avatar" translatable="false">Avatar Home</string>
+
+    <!-- Home -->
+    <string name="gallery" translatable="false">Gallery</string>
+
+    <!-- Card -->
+    <string name="card" translatable="false">Card</string>
+
+    <!-- Popup Settings -->
+    <string name="flagItalian" translatable="false">Flag Italian</string>
+    <string name="flagEnglish" translatable="false">Flag English</string>
+
+    <!-- Fragment Missions -->
+    <string name="rewards" translatable="false">Rewards</string>
+</resources>

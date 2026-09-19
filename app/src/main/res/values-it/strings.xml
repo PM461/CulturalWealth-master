@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cultural Wealth</string>
+
+    <!-- Login -->
+    <string name="login">Accedi</string>
+    <string name="signin">Registrati</string>
+    <string name="google">Accedi con Google</string>
+    <string name="mail">Inserisci mail</string>
+    <string name="password">Inserisci password</string>
+    <string name="guest">Guest</string>
+
+    <!-- Gallery -->
+    <string name="monuments">Monumenti</string>
+    <string name="paintings">Quadri</string>
+    <string name="characters">Personaggi</string>
+    <string name="loaded">Patrimoni non ancora presenti</string>
+    <string name="noMonu">Monumenti non ancora presenti</string>
+    <string name="noPaint">Quadri non ancora presenti</string>
+    <string name="noChar">Personaggi non ancora presenti</string>
+    <!-- Settings -->
+    <string name="log_out">Disconnetti</string>
+    <string name="settings">Impostazioni</string>
+    <string name="music">Volume Musica</string>
+    <string name="effect">Volume Effetti</string>
+    <string name="language">Lingua</string>
+
+    <!-- Popup Goals -->
+    <string name="achievements">Obiettivi</string>
+    <string name="missions">Missioni</string>
+
+    <!-- Home -->
+    <string name="play">Gioca</string>
+    <string name="shop">Negozio</string>
+
+    <!-- Registration -->
+    <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="passwordR">Password</string>
+    <string name="BtnConfirm">Conferma</string>
+    <string name="msgRegistration">Sei già registrato? effettua il Log-in</string>
+
+    <!-- Popup Dialogs -->
+    <string name="submit">Invia</string>
+    <string name="InsertUser">Inserisci lo username qui</string>
+    <string name="username">Nome Utente</string>
+
+    <!-- Ranking popup -->
+    <string name="RankName">Nome utente</string>
+    <string name="RankPoints">Punteggio</string>
+    <string name="RankPositions">Posizione</string>
+    <string name="RankTitle">Classifica</string>
+
+    <!-- RecyclerView Gallery -->
+    <string name="loading">Caricamento...</string>
+
+    <!-- Game Activity -->
+    <string name="exit">Esci</string>
+    <string name="esci">Vuoi uscire dal gioco?</string>
+    <string name="save">Esci&amp;Save</string>
+
+    <string name="inizia_turno">Inizia Turno</string>
+    <string name="fine_turno">Fine Turno</string>
+    <string name="compra">Compra</string>
+    <string name="info">Info</string>
+    <string name="rank_of_the_match">Classifica Partita</string>
+    <string name="new_game">Nuova Partita</string>
+    <string name="load_game">Carica Partita</string>
+    <string name="guest_rules">Connettendoti come ospite in un gioco potresti perdere alcuni dei seguenti benefici:   -Accesso a contenuti esclusivi  -Salvataggio del progresso di gioco  -Funzionalità online come il matchmaking con amici e le classifiche  -Meno pubblicità  -Opzioni di personalizzazione limitate.</string>
+    <string name="flip">gita</string>
+    <string name="number_of_players">Numero Giocatori</string>
+    <string name="start_balance">Saldo Iniziale</string>
+    <string name="chose_puddles">Scegli Pedina</string>
+    <string name="saves">Salvataggi</string>
+    <string name="offer">Proposta</string>
+</resources>

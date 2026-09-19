@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#B3B3B3</color>
+    <color name="darkgrey">#5A5A5A</color>
+    <color name="au_chico">#90605A</color>
+    <color name="sandy_brown">#F7A15F</color>
+    <color name="new_orleans">#CCB487</color>
+    <color name="ming">#3E8B8E</color>
+    <color name="summer_green">#9DB9A7</color>
+    <color name="marrone">#7B5A4C</color>
+    <color name="dark_wood">#715549</color>
+    <color name="pink_rose">#EAD2AC</color>
+
+    <color name="Pale_purple">#F1E3F3</color>
+    <color name="Periwinkie">#7B5A4C</color>
+    <color name="Jodie_Blue">#715549</color>
+    <color name="Deep_sky_blue">#EAD2AC</color>
+    <color name="Dodger_blue">#EAD2AC</color>
+
+    <color name="Russet">#854D27</color>
+    <color name="Cocoa_brown">#dd7230</color>
+    <color name="saffron">#F4C95D</color>
+    <color name="flax">#E7E393</color>
+
+    <color name="Redwood">#A23E48</color>
+    <color name="Air_Force_blue">#6C8EAD</color>
+    <color name="Pumpkin">#FC7A1E</color>
+    <color name="Coral_pink">#F4978E</color>
+    <color name="Violet">#6C3A5C</color>
+
+
+</resources>

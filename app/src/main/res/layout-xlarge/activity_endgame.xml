@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/emboss">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageView"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="@color/flax"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:foregroundGravity="center">
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rank_of_the_match"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageButton
+        android:id="@+id/continu"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/radiobutton_off_background"
+        android:backgroundTint="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageView17"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/pink_rose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/First"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3"
+                app:srcCompat="@drawable/icon_rank_149" />
+
+            <ImageView
+                android:id="@+id/Second"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/First"
+                app:layout_constraintTop_toBottomOf="@+id/First"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <ImageView
+                android:id="@+id/Third"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toEndOf="@+id/First"
+                app:layout_constraintTop_toBottomOf="@+id/First"
+                app:srcCompat="@android:drawable/btn_star" />
+
+            <TextView
+                android:id="@+id/firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/First"
+                app:layout_constraintStart_toStartOf="@+id/First"
+                app:layout_constraintTop_toBottomOf="@+id/First" />
+
+            <TextView
+                android:id="@+id/secondname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/Second"
+                app:layout_constraintStart_toStartOf="@+id/Second"
+                app:layout_constraintTop_toBottomOf="@+id/Second" />
+
+            <TextView
+                android:id="@+id/thirdname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/Third"
+                app:layout_constraintStart_toStartOf="@+id/Third"
+                app:layout_constraintTop_toBottomOf="@+id/Third" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:tint="#DD2C00"
+                app:layout_constraintBottom_toBottomOf="@+id/First"
+                app:layout_constraintEnd_toEndOf="@+id/First"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/First"
+                app:layout_constraintTop_toTopOf="@+id/First"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@android:drawable/radiobutton_off_background" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:tint="#DD2C00"
+                app:layout_constraintEnd_toEndOf="@+id/Third"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Third"
+                app:layout_constraintTop_toTopOf="@+id/Third"
+                app:srcCompat="@android:drawable/radiobutton_off_background" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:tint="#DD2C00"
+                app:layout_constraintEnd_toEndOf="@+id/Second"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Second"
+                app:layout_constraintTop_toTopOf="@+id/Second"
+                app:srcCompat="@android:drawable/radiobutton_off_background" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+                app:layout_constraintEnd_toEndOf="@+id/imageView21"
+                app:layout_constraintStart_toStartOf="@+id/imageView21"
+                app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+                app:layout_constraintEnd_toEndOf="@+id/imageView23"
+                app:layout_constraintStart_toStartOf="@+id/imageView23"
+                app:layout_constraintTop_toTopOf="@+id/imageView23" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+                app:layout_constraintEnd_toEndOf="@+id/imageView22"
+                app:layout_constraintStart_toStartOf="@+id/imageView22"
+                app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+            <TextView
+                android:id="@+id/firstpoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/First"
+                app:layout_constraintEnd_toEndOf="@+id/First"
+                app:layout_constraintStart_toStartOf="@+id/First" />
+
+            <TextView
+                android:id="@+id/secondpoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Second"
+                app:layout_constraintEnd_toEndOf="@+id/Second"
+                app:layout_constraintStart_toStartOf="@+id/Second"
+                app:layout_constraintTop_toTopOf="@+id/Second"
+                app:layout_constraintVertical_bias="0.6" />
+
+            <TextView
+                android:id="@+id/thirdpoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Third"
+                app:layout_constraintEnd_toEndOf="@+id/Third"
+                app:layout_constraintStart_toStartOf="@+id/Third"
+                app:layout_constraintTop_toTopOf="@+id/Third"
+                app:layout_constraintVertical_bias="0.6" />
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                app:flow_horizontalAlign="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/Third"
+                app:layout_constraintStart_toEndOf="@+id/Second"
+                app:layout_constraintTop_toBottomOf="@+id/secondname">
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/rank" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView18"
+                    android:text="+100 XP"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView18" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

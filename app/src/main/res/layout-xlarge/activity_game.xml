@@ -1,0 +1,1388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/name3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondo_serio"
+    tools:context=".Gameplay.GameActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViewZoom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?android:attr/autofilledHighlight"
+            android:backgroundTint="#812B2B2B"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/players"
+            app:layout_constraintStart_toEndOf="@+id/btnBack"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Icons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/exa_10"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:contentDescription="Prison"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.50"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_11"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="55dp"
+                    android:contentDescription="Colosseum"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_10"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_10"
+                    app:layout_constraintStart_toStartOf="@+id/exa_10"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Redwood" />
+
+                <ImageView
+                    android:id="@+id/exa_12"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="39dp"
+                    android:contentDescription="Elettro"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_11"
+                    app:layout_constraintStart_toStartOf="@+id/exa_11"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_13"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="19dp"
+                    android:contentDescription="Chichen Itza"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_12"
+                    app:layout_constraintStart_toStartOf="@+id/exa_12"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Redwood" />
+
+                <ImageView
+                    android:id="@+id/exa_14"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="39dp"
+                    android:contentDescription="Hagia Sophia"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_13"
+                    app:layout_constraintStart_toStartOf="@+id/exa_13"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Redwood" />
+
+                <ImageView
+                    android:id="@+id/exa_15"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="Museo 2"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_14"
+                    app:layout_constraintStart_toStartOf="@+id/exa_14"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_16"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="Angkor Wat"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_15"
+                    app:layout_constraintStart_toStartOf="@+id/exa_15"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Jodie_Blue" />
+
+                <ImageView
+                    android:id="@+id/exa_17"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="Probability"
+                    app:layout_constraintStart_toStartOf="@+id/exa_16"
+                    app:layout_constraintTop_toTopOf="@+id/exa_16"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_18"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="Alhambra"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_17"
+                    app:layout_constraintStart_toStartOf="@+id/exa_17"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Jodie_Blue" />
+
+                <ImageView
+                    android:id="@+id/exa_19"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="Kamakura Daibutsu"
+                    app:layout_constraintStart_toStartOf="@+id/exa_18"
+                    app:layout_constraintTop_toTopOf="@+id/exa_18"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Jodie_Blue" />
+
+                <ImageView
+                    android:id="@+id/exa_20"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="42dp"
+                    android:contentDescription="Parking"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_19"
+                    app:layout_constraintStart_toStartOf="@+id/exa_19"
+                    app:layout_constraintTop_toTopOf="@+id/exa_19"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_21"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="59dp"
+                    android:contentDescription="Bran Castle"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_20"
+                    app:layout_constraintStart_toStartOf="@+id/exa_20"
+                    app:layout_constraintTop_toTopOf="@+id/exa_20"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/summer_green" />
+
+                <ImageView
+                    android:id="@+id/exa_22"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="Chance"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_21"
+                    app:layout_constraintStart_toStartOf="@+id/exa_21"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_23"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="Machu Picchu"
+                    app:layout_constraintStart_toStartOf="@+id/exa_22"
+                    app:layout_constraintTop_toTopOf="@+id/exa_22"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/summer_green" />
+
+                <ImageView
+                    android:id="@+id/exa_24"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="Kremlin"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_23"
+                    app:layout_constraintStart_toStartOf="@+id/exa_23"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/summer_green" />
+
+                <ImageView
+                    android:id="@+id/exa_25"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="Museo 3"
+                    app:layout_constraintStart_toStartOf="@+id/exa_24"
+                    app:layout_constraintTop_toTopOf="@+id/exa_24"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_26"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="Taj Mahal"
+                    app:layout_constraintStart_toStartOf="@+id/exa_25"
+                    app:layout_constraintTop_toTopOf="@+id/exa_25"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Coral_pink" />
+
+                <ImageView
+                    android:id="@+id/exa_27"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="39dp"
+                    android:contentDescription="Big Ben"
+                    app:layout_constraintStart_toStartOf="@+id/exa_26"
+                    app:layout_constraintTop_toTopOf="@+id/exa_26"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Coral_pink" />
+
+                <ImageView
+                    android:id="@+id/exa_28"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="19dp"
+                    android:contentDescription="Acqua"
+                    app:layout_constraintStart_toStartOf="@+id/exa_27"
+                    app:layout_constraintTop_toTopOf="@+id/exa_27"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_29"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="39dp"
+                    android:contentDescription="Tour Eiffel"
+                    app:layout_constraintStart_toStartOf="@+id/exa_28"
+                    app:layout_constraintTop_toTopOf="@+id/exa_28"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Coral_pink" />
+
+                <ImageView
+                    android:id="@+id/exa_30"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+
+                    android:contentDescription="Go_to_jail"
+                    app:layout_constraintBottom_toTopOf="@+id/exa_31"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_29"
+                    app:layout_constraintStart_toStartOf="@+id/exa_29"
+                    app:layout_constraintTop_toBottomOf="@+id/exa_29"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_9"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="55dp"
+                    android:contentDescription="Great Wall of China"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_10"
+                    app:layout_constraintStart_toStartOf="@+id/exa_10"
+                    app:layout_constraintTop_toTopOf="@+id/exa_10"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/saffron" />
+
+                <ImageView
+                    android:id="@+id/exa_8"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="39dp"
+                    android:contentDescription="Parthenon"
+                    app:layout_constraintStart_toStartOf="@+id/exa_9"
+                    app:layout_constraintTop_toTopOf="@+id/exa_9"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/saffron" />
+
+                <ImageView
+                    android:id="@+id/exa_7"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="Chance"
+                    app:layout_constraintStart_toStartOf="@+id/exa_8"
+                    app:layout_constraintTop_toTopOf="@+id/exa_8"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_6"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="39dp"
+                    android:contentDescription="Petra"
+                    app:layout_constraintStart_toStartOf="@+id/exa_7"
+                    app:layout_constraintTop_toTopOf="@+id/exa_7"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/saffron" />
+
+                <ImageView
+                    android:id="@+id/exa_5"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="Museo"
+                    app:layout_constraintStart_toStartOf="@+id/exa_6"
+                    app:layout_constraintTop_toTopOf="@+id/exa_6"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_4"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="Income_tax"
+                    app:layout_constraintStart_toStartOf="@+id/exa_5"
+                    app:layout_constraintTop_toTopOf="@+id/exa_5"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_3"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="Three Pyramid of Gyza"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_4"
+                    app:layout_constraintStart_toStartOf="@+id/exa_4"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Air_Force_blue" />
+
+                <ImageView
+                    android:id="@+id/exa_2"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="Probability"
+                    app:layout_constraintStart_toStartOf="@+id/exa_3"
+                    app:layout_constraintTop_toTopOf="@+id/exa_3"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_1"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="Stonehenge"
+                    android:tintMode="src_in"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_2"
+                    app:layout_constraintStart_toStartOf="@+id/exa_2"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Air_Force_blue" />
+
+                <ImageView
+                    android:id="@+id/exa_0"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="42dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_1"
+                    app:layout_constraintStart_toStartOf="@+id/exa_1"
+                    app:layout_constraintTop_toTopOf="@+id/exa_1"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/exa_39"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="59dp"
+                    android:contentDescription="Burj Khalifa"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_0"
+                    app:layout_constraintStart_toStartOf="@+id/exa_0"
+                    app:layout_constraintTop_toTopOf="@+id/exa_0"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Violet" />
+
+                <ImageView
+                    android:id="@+id/exa_38"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="Luxury_Tax"
+                    app:layout_constraintStart_toStartOf="@+id/exa_39"
+                    app:layout_constraintTop_toTopOf="@+id/exa_39"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_37"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="Sidney Opera House"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_38"
+                    app:layout_constraintStart_toStartOf="@+id/exa_38"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Violet" />
+
+                <ImageView
+                    android:id="@+id/exa_36"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="Chance"
+                    app:layout_constraintStart_toStartOf="@+id/exa_37"
+                    app:layout_constraintTop_toTopOf="@+id/exa_37"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_35"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="Museo 4"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_36"
+                    app:layout_constraintStart_toStartOf="@+id/exa_36"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_34"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="Montreal Biosphere"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_35"
+                    app:layout_constraintStart_toStartOf="@+id/exa_35"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Pumpkin" />
+
+                <ImageView
+                    android:id="@+id/exa_33"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="39dp"
+                    android:contentDescription="Probability"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_34"
+                    app:layout_constraintStart_toStartOf="@+id/exa_34"
+                    app:srcCompat="@drawable/casella" />
+
+                <ImageView
+                    android:id="@+id/exa_32"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="United Nations"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_33"
+                    app:layout_constraintStart_toStartOf="@+id/exa_33"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Pumpkin" />
+
+                <ImageView
+                    android:id="@+id/exa_31"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="39dp"
+                    android:contentDescription="Christ the Redeemer"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_32"
+                    app:layout_constraintStart_toStartOf="@+id/exa_32"
+                    app:srcCompat="@drawable/casella"
+                    app:tint="@color/Pumpkin" />
+
+                <ImageView
+                    android:id="@+id/Ico_0"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_0"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_0"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_0"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_0"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_1"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_1"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_1"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_1"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_2"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_2"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_2"
+                    app:layout_constraintTop_toTopOf="@+id/exa_2"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_3"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_3"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_3"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_3"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_4"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_4"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_4"
+                    app:layout_constraintTop_toTopOf="@+id/exa_4"
+                    app:layout_constraintVertical_bias="0.9"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@+id/Ico_5"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_5"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_5"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_5"
+                    app:layout_constraintTop_toTopOf="@+id/exa_5"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_6"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_6"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_6"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_6"
+                    app:layout_constraintTop_toTopOf="@+id/exa_6"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_7"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_7"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_7"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_7"
+                    app:layout_constraintTop_toTopOf="@+id/exa_7"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_8"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_8"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_8"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_8"
+                    app:layout_constraintTop_toTopOf="@+id/exa_8"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_9"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_9"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_9"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_9"
+                    app:layout_constraintTop_toTopOf="@+id/exa_9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_10"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_10"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_10"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_10"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_10"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_11"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_11"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_11"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_11"
+                    app:layout_constraintTop_toTopOf="@+id/exa_11"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_12"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_12"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_12"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_12"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_12"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_13"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_13"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_13"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_13"
+                    app:layout_constraintTop_toTopOf="@+id/exa_13"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_14"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_14"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_14"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_14"
+                    app:layout_constraintTop_toTopOf="@+id/exa_14"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_15"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_15"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_15"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_15"
+                    app:layout_constraintTop_toTopOf="@+id/exa_15"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_16"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_16"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_16"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_16"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_16"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_17"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_17"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_17"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_17"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_17"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_18"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_18"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_18"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_18"
+                    app:layout_constraintTop_toTopOf="@+id/exa_18"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_19"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_19"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_19"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_19"
+                    app:layout_constraintTop_toTopOf="@+id/exa_19"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_20"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_20"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_20"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_20"
+                    app:layout_constraintTop_toTopOf="@+id/exa_20"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_21"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_21"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_21"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_21"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_21"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_22"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_22"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_22"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_22"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_22"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_23"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_23"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_23"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_23"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_23"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_24"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_24"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_24"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_24"
+                    app:layout_constraintTop_toTopOf="@+id/exa_24"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_25"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_25"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_25"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_25"
+                    app:layout_constraintTop_toTopOf="@+id/exa_25"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_26"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_26"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_26"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_26"
+                    app:layout_constraintTop_toTopOf="@+id/exa_26"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_27"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_27"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_27"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_27"
+                    app:layout_constraintTop_toTopOf="@+id/exa_27"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_28"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_28"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_28"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_28"
+                    app:layout_constraintTop_toTopOf="@+id/exa_28"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_29"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_29"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_29"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_29"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_29"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_30"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_30"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_30"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_30"
+                    app:layout_constraintTop_toTopOf="@+id/exa_30"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_31"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_31"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_31"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_31"
+                    app:layout_constraintTop_toTopOf="@+id/exa_31"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_32"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_32"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_32"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_32"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_32"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_33"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_33"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_33"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_33"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_33"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_34"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_34"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_34"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_34"
+                    app:layout_constraintTop_toTopOf="@+id/exa_34"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_35"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_35"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_35"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_35"
+                    app:layout_constraintTop_toTopOf="@+id/exa_35"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_36"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_36"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_36"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_36"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_36"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_37"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_37"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_37"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/exa_37"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_37"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_38"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_38"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_38"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_38"
+                    app:layout_constraintTop_toTopOf="@+id/exa_38"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <ImageView
+                    android:id="@+id/Ico_39"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_39"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_39"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_39"
+                    app:layout_constraintTop_toTopOf="@+id/exa_39"
+                    app:layout_constraintVertical_bias="0.9" />
+
+
+                <ImageView
+                    android:id="@+id/pedina1"
+                    android:layout_width="31dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="308dp"
+                    android:layout_marginTop="352dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/abstract_painting_ic_national_culture_paris_svgrepo_com" />
+
+                <ImageView
+                    android:id="@+id/pedina3"
+                    android:layout_width="31dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="284dp"
+                    android:layout_marginTop="356dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/moai_svgrepo_com" />
+
+
+                <ImageView
+                    android:id="@+id/pedina2"
+                    android:layout_width="31dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="328dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/culture_japan_japanese_svgrepo_com" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/dice2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/exa_30"
+                    app:layout_constraintStart_toEndOf="@+id/exa_10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.45" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/dice1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="40dp"
+                    app:layout_constraintEnd_toEndOf="@+id/dice2"
+                    app:layout_constraintTop_toTopOf="@+id/dice2" />
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="34dp"
+                    android:layout_height="27dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_2"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/Ico_3"
+                    app:layout_constraintTop_toTopOf="@+id/exa_2"
+                    app:srcCompat="@drawable/money_loss" />
+
+                <ImageView
+                    android:id="@+id/imageView29"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_4"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_4"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintHorizontal_bias="0.35"
+                    app:layout_constraintStart_toEndOf="@+id/Ico_5"
+                    app:layout_constraintTop_toTopOf="@+id/exa_4"
+                    app:srcCompat="@drawable/bag" />
+
+                <ImageView
+                    android:id="@+id/imageView30"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toTopOf="@+id/exa_9"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_10"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_10"
+                    app:layout_constraintTop_toBottomOf="@+id/exa_11"
+                    app:srcCompat="@drawable/exile" />
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_17"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_17"
+                    app:layout_constraintStart_toStartOf="@+id/exa_17"
+                    app:layout_constraintTop_toTopOf="@+id/exa_17"
+                    app:srcCompat="@drawable/bag" />
+
+                <ImageView
+                    android:id="@+id/imageView33"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_20"
+                    app:layout_constraintEnd_toStartOf="@+id/exa_21"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toEndOf="@+id/exa_19"
+                    app:layout_constraintTop_toTopOf="@+id/exa_20"
+                    app:srcCompat="@drawable/money_loss" />
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_22"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_22"
+                    app:layout_constraintHorizontal_bias="0.67"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_22"
+                    app:layout_constraintTop_toTopOf="@+id/exa_22"
+                    app:srcCompat="@drawable/bag" />
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintBottom_toTopOf="@+id/exa_34"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_33"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="@+id/exa_33"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintTop_toTopOf="@+id/exa_33"
+                    app:layout_constraintVertical_bias="0.63"
+                    app:srcCompat="@drawable/money_loss" />
+
+                <ImageView
+                    android:id="@+id/imageView37"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_36"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_36"
+                    app:layout_constraintStart_toStartOf="@+id/exa_36"
+                    app:layout_constraintTop_toTopOf="@+id/exa_36"
+                    app:srcCompat="@drawable/bag" />
+
+                <ImageView
+                    android:id="@+id/imageView38"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_38"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_38"
+                    app:layout_constraintHorizontal_bias="0.58"
+                    app:layout_constraintStart_toStartOf="@+id/exa_38"
+                    app:layout_constraintTop_toTopOf="@+id/exa_38"
+                    app:srcCompat="@drawable/money_loss" />
+
+                <ImageView
+                    android:id="@+id/imageView39"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintBottom_toTopOf="@+id/exa_31"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="@+id/exa_30"
+                    app:layout_constraintTop_toBottomOf="@+id/exa_29"
+                    app:srcCompat="@drawable/wagon" />
+
+
+                <ImageView
+                    android:id="@+id/acquaimm"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:contentDescription="Acqua"
+                    android:background="@drawable/rounded_border"
+                    app:layout_constraintStart_toStartOf="@+id/exa_28"
+                    app:layout_constraintTop_toTopOf="@+id/exa_28"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_28"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_28"
+                    app:srcCompat="@drawable/acqua"/>
+
+                <ImageView
+                    android:id="@+id/elettroimm"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:contentDescription="Elettro"
+                    android:background="@drawable/rounded_border"
+                    app:layout_constraintStart_toStartOf="@+id/exa_12"
+                    app:layout_constraintTop_toTopOf="@+id/exa_12"
+                    app:layout_constraintBottom_toBottomOf="@+id/exa_12"
+                    app:layout_constraintEnd_toEndOf="@+id/exa_12"
+                    app:srcCompat="@drawable/elettro"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/dado"
+            android:layout_width="80dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="@string/inizia_turno"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/players"
+            app:layout_constraintTop_toBottomOf="@+id/players" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:background="@drawable/defaultbtn"
+            android:backgroundTint="@color/pink_rose"
+            android:contentDescription="@string/back"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="?attr/homeAsUpIndicator" />
+
+        <Button
+            android:id="@+id/endTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="?attr/colorError"
+            android:text="@string/fine_turno"
+            app:layout_constraintEnd_toEndOf="@+id/dado"
+            app:layout_constraintStart_toStartOf="@+id/dado"
+            app:layout_constraintTop_toBottomOf="@+id/dado" />
+
+        <Button
+            android:id="@+id/Info"
+            android:layout_width="58dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="@color/new_orleans"
+            android:text="@string/info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/players"
+            app:layout_constraintTop_toBottomOf="@+id/endTurn" />
+
+        <Button
+            android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="@color/ming"
+            android:text="@string/compra"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Info"
+            app:layout_constraintTop_toBottomOf="@+id/endTurn" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/me"
+                android:layout_width="151dp"
+                android:layout_height="45dp"
+                android:background="@drawable/rounded"
+
+                android:alpha="0.92"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/pink_rose"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/money1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text=""
+                    android:textColor="@color/pink_rose"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toEndOf="@+id/money1"
+                    app:layout_constraintTop_toBottomOf="@+id/name1"
+                    app:srcCompat="@drawable/_0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/infoplayer2"
+                android:layout_width="151dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded"
+                android:alpha="0.92"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/me">
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/pink_rose"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/money2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text=""
+                    android:textColor="@color/pink_rose"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name2" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toEndOf="@+id/money2"
+                    app:layout_constraintTop_toBottomOf="@+id/name2"
+                    app:srcCompat="@drawable/_1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/infoplayer3"
+                android:layout_width="151dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded"
+                android:alpha="0.92"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/infoplayer2">
+
+                <TextView
+                    android:id="@+id/name33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/pink_rose"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/money3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text=""
+                    android:textColor="@color/pink_rose"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name33" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/money3"
+                    app:layout_constraintTop_toBottomOf="@+id/name33"
+                    app:srcCompat="@drawable/_2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

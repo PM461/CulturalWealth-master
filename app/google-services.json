@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "494422299949",
+    "project_id": "cultural-wealth",
+    "storage_bucket": "cultural-wealth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494422299949:android:625b69914ce73a7cfe6fa4",
+        "android_client_info": {
+          "package_name": "it.uniba.dib.sms222316"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494422299949-850p67vd7dpig0r9l2p92evj5pbj8p4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDawtvpDNlWXB-fwhsYA6Le0Ag3Cbu5lbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494422299949-850p67vd7dpig0r9l2p92evj5pbj8p4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

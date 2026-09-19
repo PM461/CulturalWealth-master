@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MissionCard"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/Periwinkie"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/TitleMission"
+        android:textColor="@color/pink_rose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/ProgressBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ProgressNumber"
+            android:textColor="@color/pink_rose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/ProgressBar"
+            app:layout_constraintTop_toTopOf="@+id/TitleMission" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/divider4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TitleMission" />
+
+        <TextView
+            android:id="@+id/Rewards"
+            android:textColor="@color/pink_rose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ProgressBar"
+            app:layout_constraintEnd_toEndOf="@+id/RewardsImg"
+            app:layout_constraintStart_toStartOf="@+id/RewardsImg"
+            app:layout_constraintTop_toBottomOf="@+id/RewardsImg" />
+
+        <ImageView
+            android:id="@+id/RewardsImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/rewards"
+            app:layout_constraintBottom_toTopOf="@+id/ProgressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ProgressBar"
+            app:layout_constraintTop_toTopOf="@+id/TitleMission"
+            app:srcCompat="@drawable/coin" />
+
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="500dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
